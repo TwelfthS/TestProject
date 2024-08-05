@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Test Task</title>
+</head>
+<body>
+    <header class="margin-common">
+        <div class="top-div flex-sb">
+            <div class="top-nav-left">
+                <a>Магазины</a>
+                <a>info@kraskizdes.ru</a>
+            </div>
+            <ul class="top-nav">
+                <li><a>Доставка</a></li>
+                <li><a>Оплата</a></li>
+                <li><a>Возврат</a></li>
+                <li><a>Помощь</a></li>
+                <li><a>О нас</a></li>
+                <li><a>Для бизнеса</a></li>
+            </ul>
+
+        </div>
+        <div class="mobile-top">
+            <img src="./images/Group.png">
+        </div>
+        <div class="flex-sb margin-in-header">
+            <img id="logo-pc" src="./images/Group.png">
+            <button id="catalogue">Каталог</button>
+            <button id="burger-btn" class="burger-btn"></button>
+            <div class="search-inner-div">
+                <input class="search pc-input" placeholder="Искать товары">
+                <input class="search mobile-input" placeholder="Поиск">
+                <button id="search-btn"></button>
+            </div>
+            
+            <button id="login-btn" class="near-search-btn"></button>
+            <button id="izbr-btn" class="near-search-btn"></button>
+            <button id="cart-btn" class="near-search-btn"></button>
+        </div>
+        <div class="flex-sb margin-in-header flex-nowrap">
+            <button class="default-choose-btn">Акции</button>
+            <button class="default-choose-btn">Бренды</button>
+            <button class="default-choose-btn">Premium бренды</button>
+            <button class="default-choose-btn">Подбор по параметрам</button>
+            <button class="default-choose-btn">Онлайн-колеровка</button>
+            <button class="default-choose-btn">Новости компании</button>
+            <button class="phone-number-button">8 (888) 888-88-88</button>
+        </div>
+        <div id="cart-menu" class="cart hidden">
+            <p>Корзина</p>
+            <div>
+                <div class="flex-sb cart-product-div">
+                    <a>
+                        <img src="./images/cartproduct.png">
+                    </a>
+                    
+                    <div class="cart-text-div">
+                        <a class="cart-product-name">Название товара</a>
+                        <p class="text-right cart-product-info">1000 Р</p>
+                        <p class="cart-product-info">0.75 л</p>
+                        <p class="cart-product-info">Полуматовый</p>
+                        <p class="cart-product-info">Flugger</p>
+                        <p class="text-right cart-product-info">1 шт</p>
+                    </div>
+                    <button class="trash-btn"></button>
+                </div>
+            </div>
+            <div>
+                <p>Итого: 1000 Р</p>
+                <button class="arrow-btn">Купить в 1 клик</button>
+                <button class="cart-btn">Перейти в корзину</button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <p>Каталог</p>
+            <p>Корзина</p>
+            <p>Избранное</p>
+            <p>Профиль</p>
+        </div>
+    </header>
+    <div class="flex-sb margin-common margin-big second-section">
+        <a class="discount-big">
+            <img src="./images/discount_big.png">
+        </a>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a class="discount-normal"><img src="./images/product card.png"></a></div>
+              <div class="swiper-slide"><a><img src="./images/product card 2.png"></a></div>
+              <div class="swiper-slide"><a class="discount-normal"><img src="./images/product card.png"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+    <main class="margin-common">
+        <div class="flex-sb">
+            <img class="banner-img" src="./images/middleimg1.png">
+            <img class="banner-img" src="./images/middleimg2.png">
+            <img class="banner-img" src="./images/middleimg3.png">
+        </div>
+        <div class="margin-big">
+            <header class="flex-sb margin-small">
+                <p class="text-h2">Популярные категории</p>
+                <button class="arrow-btn">Все категории</button>
+            </header>
+            <div class="flex-sb margin-small flex-nowrap">
+                <button class="default-choose-btn">Акции</button>
+                <button class="default-choose-btn">Для внутренних работ</button>
+                <button class="default-choose-btn">Для наружных работ</button>
+                <button class="default-choose-btn">Универсальные</button>
+                <button class="default-choose-btn">Специального назначения</button>
+                <button class="default-choose-btn">Грунтовки</button>
+                <button class="default-choose-btn">Специального назначения</button>
+            </div>
+            <div class="flex-sb">
+                <a>
+                    <img src="./images/category.png">
+                </a>
+                <a>
+                    <img src="./images/category.png">
+                </a>
+                <a>
+                    <img src="./images/category.png">
+                </a>
+                <a>
+                    <img src="./images/category.png">
+                </a>
+            </div>
+
+
+        </div>
+        <div class="margin-big">
+            <header class="flex-sb">
+                <p class="text-h2">Скидки</p>
+                <button class="arrow-btn">Все скидки</button>  
+            </header>
+            <div class="flex-sb">
+                <a>
+                    <img src="./images/product card.png">
+                </a>
+                <a>
+                    <img src="./images/product card.png"">
+                </a>
+                <a>
+                    <img src="./images/product card.png"">
+                </a>
+                <a>
+                    <img src="./images/product card.png"">
+                </a>
+            </div>
+        </div>
+        <div class="flex-sb consult-main margin-big">
+            <div class="consult-img-div">
+                <img src="./images/consult.png" class="consult-img">
+            </div>
+            <div class="consult-form">
+                <p class="text-h2">Нужна консультация?</p>
+                <p>Оставьте свои данные, и мы перезвоним вам в ближайшее время</p>
+                <input class="consult-input" id="name-input" placeholder="Ваше имя">
+                <input class="consult-input" id="phone-input" placeholder="Номер телефона">
+                <div class="consult-form-bottom">
+                    <p>Нажимая на кнопку "Отправить", Вы принимаете условия Соглашения</p>
+                    <button class="arrow-btn" id="send-btn">Отправить</button>
+                </div>
+
+            </div>
+            <div id="success-div" class="success hidden">
+                <p class="text-h2">Заявка принята</p>
+                <p>Благодарим за заявку</p>
+                <button id="close-btn">X</button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="flex-sb">
+                <div class="footer-first-half flex-sb">
+                    <div class="footer-logo-div">
+                        <img src="images/Group.png">
+                    </div>
+                    
+                    <div class="contacts">
+                        <p>Телефон</p>
+                        <p>номер</p>
+                        <p>Электронная почта</p>
+                        <p>почта</p>
+                        <div>
+                            <a>
+                                <img src="images/vk.png">
+                            </a>
+                            <a>
+                                <img src="images/yt.png">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div style="width: 100%">
+                        <p>5/5</p>
+                    </div>
+                    
+                    <button class="default-choose-btn director-btn">Написать директору</button>
+                    <a class="bank-logo">
+                        <img src="images/ms.png">
+                    </a>
+                    <a class="bank-logo">
+                        <img src="images/visa.png">
+                    </a>
+                    <a class="bank-logo">
+                        <img src="images/mir-logo.png">
+                    </a>
+                </div>
+                <div class="flex-column">
+                    <a class="text-h3">Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                </div>
+                <div class="flex-column mobile-hidden">
+                    <a class="text-h3">Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                </div>
+                <div class="flex-column mobile-hidden">
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                    <a>Текст</a>
+                </div>
+            </div>
+            <p>2023 Интернет-магазин</p>
+        </footer>
+    </main>
+</body>
+</html>

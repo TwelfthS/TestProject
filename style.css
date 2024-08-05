@@ -1,0 +1,499 @@
+* {
+    font-family: 'Euclid Circular A', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .top-div {
+        display: none !important;
+    }
+    .near-search-btn {
+        display: none;
+    }
+    #catalogue {
+        display: none;
+    }
+    .phone-number-button {
+        display: none;
+    }
+    #logo-pc {
+        display: none;
+    }
+    .margin-common {
+        margin: 0 !important;
+    }
+    .pc-input {
+        display: none;
+    }
+    .banner-img {
+        width: 100% !important;
+        margin: 0;
+    }
+    .consult-img-div {
+        display: none;
+    }
+    .consult-form {
+        width: 100% !important;
+    }
+    .text-h2 {
+        font-size: 40px !important;
+    }
+    .mobile-hidden {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    .burger-btn {
+        display: none;
+    }
+    .mobile-top {
+        display: none !important;
+    }
+    .mobile-input {
+        display: none;
+    }
+}
+
+.text-h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 63px;
+    margin: 0;
+}
+
+.text-h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+/* margins */
+
+.margin-common {
+    margin-left: 10%;
+    margin-right: 10%;
+    /* width: 90%; */
+}
+
+.margin-in-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.margin-small {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.margin-big {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* flex */
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap !important;
+    overflow: hidden;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    max-height: 100%;
+}
+
+/* header */
+
+.top-div {
+    height: 48px;
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-left {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.cart {
+    z-index: 10;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    padding: 20px;
+    box-shadow: 0 0 20px 5px gray;
+    border: none;
+    border-radius: 15px;
+}
+
+.cart-product-div {
+    width: 800px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.cart-product-name {
+    grid-column: span 3;
+}
+
+.cart-text-div {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 10% 30% 40% 20%;
+    grid-template-rows: 60% 40%;
+    margin: 10px;
+}
+
+.cart-product-info {
+    margin: 0;
+}
+
+/* search */
+
+.search-inner-div {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 60px;
+    width: 915px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    border: none;
+    outline: none;
+    width: 850px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.discount-big {
+    width: 450px;
+}
+
+.swiper {
+    max-width: 700px;
+}
+
+.swiper-button-next {
+    background-image: url('./images/slider.png');
+    background-color: transparent;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+}
+
+.swiper-button-prev {
+    background-image: url('./images/slider.png');
+    background-color: transparent;
+    background-position: center;
+    transform: rotate(180deg);
+    width: 60px;
+    height: 60px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    content: none;
+}
+
+.banner-img {
+    width: 30%;
+    min-width: 300px;
+}
+
+.mobile-top {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-menu {
+    background-color: white;
+    width: 80%;
+    z-index: 15;
+    position: absolute;
+    border: none;
+    border-radius: 15px;
+    top: 0;
+    left: -15px;
+    padding: 25px;
+    box-shadow: 0 0 20px 5px gray;
+}
+
+.second-section {
+    background-color: #F3EFFF;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* consult */
+
+.consult-main {
+    background-color: #F3EFFF;
+    border-radius: 40px;
+    max-width: 100%;
+    height: 600px;
+}
+
+.consult-img-div {
+    background: linear-gradient(303.04deg, rgba(255, 255, 255, 0.27) 26.33%, #FDFCFF 50.99%);
+    border-radius: 50px;
+    filter: drop-shadow(12px 25px 54px rgba(126, 117, 178, 0.25));
+}
+
+.consult-img {
+    width: 100%;
+    height: 100%;
+}
+
+.consult-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px; */
+    padding: 5px;
+}
+
+.consult-input {
+    width: 513px;
+    height: 60px;
+    border: 1px solid #E50E78;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 5px;
+    max-width: 90%;
+}
+
+.consult-form-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 513px;
+    max-width: 95%;
+}
+
+.success {
+    position: absolute;
+    background-color: #F3EFFF;
+    z-index: 10;
+    border: none;
+    border-radius: 15px;
+    width: 1000px;
+    height: 400px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px 5px gray;
+    margin: auto;
+    left: 0;
+    right: 0;
+    /* top: 0; */
+    /* bottom: 0; */
+    transform: translate(0, 20px);
+}
+
+/* footer */
+
+.footer {
+    background-color: #F4F6F8;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    max-height: 500px;
+}
+
+.footer-first-half {
+    width: 40%;
+    max-width: 400px;
+}
+
+.footer-logo-div {
+    width: 50%;
+    height: 180px;
+}
+
+.contacts {
+    width: 50%;
+}
+
+.bank-logo {
+    transform: translateY(25%);
+}
+
+/* buttons */
+
+#login-btn {
+    background-image: url('./images/login.png');
+    width: 53px;
+}
+
+#izbr-btn {
+    background-image: url('./images/izbrannoye.png');
+    width: 100px;
+
+}
+
+#cart-btn {
+    background-image: url('./images/cart.png');
+    width: 76px;
+}
+
+.near-search-btn {
+    height: 52px;
+    border: none;
+    background-color: white;
+}
+
+#catalogue {
+    background-image: url('./images/catalogue.png');
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 50%;
+    width: 159px;
+    height: 60px;
+    background-color: #E50E78;
+    color: white;
+    border: none;
+    text-align: start;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+#search-btn {
+    background-image: url('./images/search.png');
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    min-width: 50px;
+}
+
+.default-choose-btn {
+    background-color: #F4F6F8;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    padding: 10px 30px;
+}
+
+.phone-number-button {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #E50E78;
+    padding: 10px 30px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.arrow-btn {
+    padding: 5px 50px 5px 5px;
+    width: 275px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    background-image: url('./images/arrow.png'), linear-gradient(95.88deg, #DD3197 0%, #822FAF 101.4%);
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 50%;
+    color: white;
+}
+
+.cart-btn {
+    padding: 5px 50px 5px 5px;
+    width: 275px;
+    height: 60px;
+    font-size: 18px;
+    border: 1px solid #DD3197;
+    border-radius: 15px;
+    background-color: white;
+    background-image: url('./images/cartbtn.png');
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 50%;
+    color: #DD3197;
+}
+
+.trash-btn {
+    background-image: url('./images/trash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border: none;
+    width: 20px;
+    height: 40px;
+    margin: auto;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.director-btn {
+    border: 1px solid gray;
+}
+
+.burger-btn {
+    background-image: url('images/burger.png');
+    background-color: #E50E78;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 15px;
+}
